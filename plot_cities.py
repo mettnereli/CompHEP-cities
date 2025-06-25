@@ -23,6 +23,11 @@ cities = [["Chicago", 41.8781, -87.6298],
           ]
 scale = 5
 
+#Map the USA with rivers
+plt.figure(figsize=(12, 8))
+plt.title('Cities in the USA with Rivers', fontsize=16)
+plt.xlabel('Longitude', fontsize=12)
+plt.ylabel('Latitude', fontsize=12) 
 map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
         projection='lcc',lat_1=32,lat_2=45,lon_0=-95)
 
@@ -44,7 +49,7 @@ for (city, latitude, longitude) in cities:
 # Get the location of each city and plot it
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
-    map.plot(x, y, marker='o',color='Red')
+    map.plot(x, y, marker='o', color='Red')
 
 #add NASA bluemarble image
 map.bluemarble()
