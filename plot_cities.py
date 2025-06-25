@@ -28,6 +28,10 @@ for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
 
+#add NASA bluemarble image
 map.bluemarble()
+# Draw rivers
+map.drawrivers()
+
 plt.show()
-plt.savefig('cities_map.png')
+plt.savefig('cities_map_wRivers.png')
