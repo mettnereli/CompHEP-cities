@@ -27,4 +27,7 @@ for (city, latitude, longitude) in cities:
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
+
+map.bluemarble()
 plt.show()
+plt.savefig('cities_map.png')
