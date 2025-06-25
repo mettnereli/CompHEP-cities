@@ -8,7 +8,20 @@ scale = 5
 map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
         projection='lcc',lat_1=32,lat_2=45,lon_0=-95)
 
+# Draw states
 map.drawstates()
+
+# Draw coastlines
+map.drawcoastlines()
+
+# Draw mexican and canadian borders
+map.drawcountries()
+
+
+# Headings for the cities
+for (city, latitude, longitude) in cities:
+    x, y = map(longitude, latitude)
+    plt.text(x, y, city, fontsize=9, ha='right', va='bottom', color='red')
 
 # Get the location of each city and plot it
 for (city, latitude, longitude) in cities:
