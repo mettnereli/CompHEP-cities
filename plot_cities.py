@@ -4,7 +4,23 @@ from mpl_toolkits.basemap import Basemap
 cities = [["Chicago", 41.8781, -87.6298],
           ["Boston", 42.3555, -71.0565],
           ["Madison", 43.0722, -89.4008],
-          ["San Diego", 32.7157, -117.1611]]
+          ["San Diego", 32.7157, -117.1611],
+          ["Los Angeles", 34.0522, -118.2437],
+          ["San Francisco", 37.7749, -122.4194],
+          ["Seattle", 47.6062, -122.3321],
+          ["New York", 40.7128, -74.0060],
+          ["Washington DC", 38.9072, -77.0369],
+          ["Miami", 25.7617, -80.1918],
+          ["Houston", 29.7604, -95.3698],
+          ["Dallas", 32.7767, -96.7970],
+          ["Phoenix", 33.4484, -112.0740],
+          ["Denver", 39.7392, -104.9903],
+          ["Atlanta", 33.7490, -84.3880],
+          ["Orlando", 28.5383, -81.3792],
+          ["Las Vegas", 36.1699, -115.1398],
+          ["Portland", 45.5051, -122.6750],
+          ["Salt Lake City", 40.7608, -111.8910],  
+          ]
 scale = 5
 
 map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
