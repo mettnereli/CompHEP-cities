@@ -15,3 +15,5 @@ for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
     map.plot(x, y, marker='o',color='Red')
 plt.show()
+
+#testing
